@@ -1,0 +1,11 @@
+[
+  {
+    "file": "data/2023_cod.27.7a.rds",
+    "type": "FLStock",
+    "metadata": {
+      "Year": 2023,
+      "ICES_StockCode": "cod.27.7a"
+    },
+    "hash": "0d406b2a6d30273ed245f522a87965b4"
+  }
+]

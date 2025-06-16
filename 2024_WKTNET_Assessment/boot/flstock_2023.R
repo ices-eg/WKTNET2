@@ -4,7 +4,7 @@ library(dplyr)
 flstocks <- test_service("flstocks")
 
 # filter to find the one we want
-stk_artifact_2023 <- getFLStock(83)
+stk_artifact_2023 <- getFLStock(85)
 
 stk2023 <- stk_artifact_2023$content
 

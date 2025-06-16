@@ -7,12 +7,13 @@ setwd("2023_WKTNET_Assessment")
 
 # copy 2022 stock into assessment repo
 cp(
-  "d:/TAF_server/Artifacts/FLstocks/cod.27.7a.rds",
+  "D:/TAF_server/Artifacts/FLstocks/cod.27.7a.rds",
   "boot/initial/data"
 )
 
 # write DATA.bib
 draft.data(
+  data.files = "cod.27.7a.rds",
   originator = "ICES, WGCSE",
   title = "Cod (Gadus morhua) in Division 7.a (Irish Sea)",
   year = 2022,
@@ -26,8 +27,7 @@ taf.boot()
 setwd("..")
 
 
-#endregion
-test <- getFLStock(83)
+# 2024 assessment
 
 setwd("2024_WKTNET_Assessment")
 
