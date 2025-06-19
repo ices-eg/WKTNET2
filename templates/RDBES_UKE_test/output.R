@@ -10,6 +10,7 @@ mkdir("output")
 interested.spp <- "COD"
 
 ###bring all the model outputs
+# only getting one just for testing
 age.dis  <- read.csv ("model/age.dist.csv")
 # bring landings
 #bring the effort
