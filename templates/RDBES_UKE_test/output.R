@@ -3,6 +3,12 @@
 ## Before:
 ## After:
 
+#create a path for each working group
+dir_path <- file.path("output", awg)
+if (!dir.exists(dir_path)) {
+  dir.create(dir_path, recursive = TRUE)
+}
+
 library(TAF)
 
 mkdir("output")
@@ -22,5 +28,6 @@ generateRCEF <- function(data){
 }
 
 RCEF <- generateRCEF(age.dis)
+write.csv(RCEF , file = file.path(dir_path, "RCEF_output.csv"), row.names = FALSE)
 message("RCEF outputs saved in output")
 ## this will have multiple table outputs
