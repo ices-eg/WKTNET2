@@ -92,8 +92,6 @@ draft.data(
 draft.data(
   data.files = NULL,
   data.scripts = "params.r",
-  year = 2024,
-  period = "2014-2024",
   originator = "Cefas",
   title = c ("paramaters"),
   file = TRUE,
